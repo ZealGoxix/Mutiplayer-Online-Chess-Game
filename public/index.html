@@ -1,0 +1,33 @@
+<!-- Basic HTML Structure -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Controls the layout and scaling on different devices -->
+    <title>Chess</title>
+    <link rel="stylesheet" href="styles.css"> <!-- References the Style.css file -->
+</head>
+<body>
+
+<div class="gameboard-container">
+    <div id="gameboard"></div> <!--Create a chess gameboard -->
+    <p>It is <span id="player"></span>'s turn.</p> <!-- Indicates whose turn it is -->
+    <p id="info-display"></p>
+</div>
+
+<!-- Ignore these -->
+<button id="startGame">Start Game</button>
+<br>
+<input type="text" id="joinRoomID" placeholder="Enter room ID to join" />
+<button id="joinGame">Join Game</button>
+<!-- Ignore these -->
+
+<script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
+<script src="default.js"></script>
+<script src="pieces.js"></script> <!-- Pieces should be read before the app -->
+<script src="moves.js"></script> <!-- References the Moves.js file -->
+
+
+
+</body>
+</html>
